@@ -1,0 +1,210 @@
+.modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 99999;
+    opacity: 0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+}
+
+.modalDialog:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modalDialog {
+    h4 {
+        text-transform: uppercase;
+        font-size: 14px;
+        color: #444444;
+        letter-spacing: 2px;
+        font-weight: 400;
+        font-family: $p-font;
+    }
+    h5 {
+        text-transform: capitalize;
+        color: #3a3a3a;
+        font-family: $p-font;
+        letter-spacing: 2px;
+        margin: 30px 0 10px 0;
+    }
+    p {
+        color: #7f7f7f;
+        line-height: 30px;
+        font-weight: 300;
+        margin-bottom: 0;
+        font-size: 16px;
+    }
+    .modal-contents {
+        max-width: 1000px;
+        position: relative;
+        margin: 7% auto 0 auto;
+        .inner {
+            padding: 40px;
+            background: #fff;
+            width: 100%;
+            float: left;
+        }
+    }
+    .map-side {
+        iframe {
+            width: 100%;
+            height: 320px;
+        }
+    }
+}
+
+.close {
+    background: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    right: -12px;
+    top: -10px;
+    width: 45px !important;
+    height: 45px !important;
+    opacity: 1;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    img {
+        width: 20px;
+        height: 20px;
+        margin-top: 5px;
+    }
+}
+
+
+/*******************************************************************************
+                        Right Fixed Booking Form
+********************************************************************************/
+
+.book-now-wrapper {
+    position: fixed;
+    right: 0;
+    top: 15%;
+    text-align: center;
+    z-index: 9999;
+}
+
+.book-now-wrapper .book-now {
+    transition: $transition-fast;
+    position: relative;
+    width: 1px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.16);
+    border-width: 0;
+    background: #ffffff;
+    padding: 25px 0;
+    border-radius: 2px;
+    overflow-x: hidden;
+    opacity: 0;
+}
+
+.book-now-wrapper .book-now.open {
+    width: 385px;
+    padding: 25px 20px;
+    border-right: 2px solid #c57676;
+    opacity: 1;
+}
+
+.book-now-wrapper .toggle {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 500;
+    letter-spacing: 2px;
+    width: 200px;
+    opacity: 1;
+    -webkit-transition: all ease 0.35s;
+    -o-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+    -ms-transform: rotate(270deg);
+    /* IE 9 */
+    -webkit-transform: rotate(270deg);
+    /* Safari */
+    transform: rotate(270deg);
+    padding: 10px 0;
+    text-transform: uppercase;
+    background: $primary;
+    box-shadow: 0 -2px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    left: -121px;
+    top: 35%;
+    cursor: pointer;
+}
+
+.book-now-wrapper .book-form p {
+    font-size: 15px;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+    padding: 0 15px 20px 15px;
+    -ms-text-align-last: auto;
+    text-align: left;
+}
+
+.book-now-wrapper .form-control {
+    border-radius: 2px;
+    margin-bottom: 15px;
+    background: #f5f5f5;
+    box-shadow: none;
+    border: 1px solid #e6e6e6;
+}
+
+.book-now-wrapper .form-control:focus {
+    border-color: #e6e6e6;
+    background: #ffffff;
+    outline: 0;
+    -webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(102, 175, 233, 0);
+    box-shadow: inset 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(102, 175, 233, 0);
+}
+
+.book-now-wrapper .form-control::-moz-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #a2a2a2;
+    font-style: italic;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 1px;
+    opacity: 1;
+}
+
+.book-now-wrapper .form-control:-ms-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #a2a2a2;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.book-now-wrapper .form-control::-webkit-input-placeholder {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #a2a2a2;
+    font-style: italic;
+    font-weight: 300;
+    text-transform: capitalize;
+}
+
+.book-now-wrapper .btn {
+    background: $primary;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 7px 0;
+    width: 100%;
+}
+
+.book-now-wrapper .btn:hover {
+    background: #a87f41;
+}

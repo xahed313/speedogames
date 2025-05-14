@@ -1,0 +1,176 @@
+.inner-page-head {
+    background-attachment: fixed;
+    background-size: cover;
+    .inner-overlay {
+        max-width: 600px;
+        height: 150px;
+        background: $primary;
+        display: block;
+        border-radius: 5px;
+        margin: 25px auto 25px auto;
+        padding-top: 15px;
+        .main-heading {
+            h1 {
+                color: #e8868b;
+            }
+            h3 {
+                color: $white;
+            }
+        }
+    }
+}
+
+.reservation-detail {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    text-align: center;
+    p {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        margin-top: 20px;
+    }
+}
+
+.item-detail {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    figure {
+        height: 400px;
+        background-size: cover;
+        background-position: center;
+    }
+    .col-md-6 {
+        position: relative;
+        height: 400px;
+        background: #565656;
+        text-align: center;
+    }
+    .price {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        background: $primary;
+        padding: 5px 10px;
+        font-size: 18px;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    h2 {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        color: $white;
+    }
+    p {
+        color: #efefef;
+        font-size: 13px;
+    }
+}
+
+.contact {
+    text-align: center;
+    .contact-info {
+        padding: 30px 0;
+        max-width: 450px;
+        margin: auto;
+        ul {
+            text-align: center;
+            margin-top: 15px;
+            li {
+                text-align: left;
+                width: 200px;
+                margin: auto;
+                font-size: 18px;
+                padding: 13px 10px 10px 10px;
+                font-weight: 400;
+                height: 50px;
+                transition: $transition-fast;
+                a {
+                    display: block;
+                }
+                .fa {
+                    font-size: 20px;
+                    margin-right: 15px;
+                }
+                &:nth-child(1) {
+                    border: 2px solid #3C599F;
+                    a {
+                        color: #3C599F;
+                    }
+                    &:hover {
+                        background: #3C599F;
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+                &:nth-child(2) {
+                    border: 2px solid #32CCFE;
+                    a {
+                        color: #32CCFE;
+                    }
+                    &:hover {
+                        background: #32CCFE;
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+                &:nth-child(3) {
+                    border: 2px solid #DD4C39;
+                    a {
+                        color: #DD4C39;
+                    }
+                    &:hover {
+                        background: #DD4C39;
+                        a {
+                            color: $white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    h2 {
+        margin-bottom: 20px;
+        color: #666;
+    }
+    p {
+        color: #888f99;
+        font-size: 15px;
+        line-height: 25px;
+    }
+    article {
+        margin-bottom: 30px;
+    }
+    .details {
+        margin-top: 20px;
+    }
+    .map-col {
+        padding: 0;
+        iframe {
+            width: 100%;
+            height: 780px;
+        }
+    }
+}
+
+form {
+    .form-control {
+        border: none;
+        border-bottom: 2px solid #ccc;
+        padding: 10px 0 15px 0;
+        &:focus {
+            box-shadow: none;
+            outline: none;
+            border-bottom-color: $primary;
+        }
+    }
+    .btn {
+        background: $primary;
+        border-radius: 0;
+        color: $white;
+        padding: 8px 15px;
+        margin-top: 20px;
+        text-transform: uppercase;
+    }
+}

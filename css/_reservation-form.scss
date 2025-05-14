@@ -1,0 +1,140 @@
+/***
+
+====================================================================
+	Reservation Section
+====================================================================
+
+***/
+
+.reservation-section{
+
+	padding:100px 0px;
+}
+
+/*Reserve Form*/
+
+.reserve-form{
+	position:relative;
+	max-width:750px;
+	margin:0 auto;
+}
+
+.reserve-form .form-group{
+	position:relative;
+	margin-bottom:30px;
+	padding-left:40px;
+}
+
+.reserve-form .form-group label{
+	position:absolute;
+	left:0px;
+	top:12px;
+	color:#232323;
+	font-size:25px;
+}
+
+.reserve-form .form-group select{
+	display:block;
+	width:100%;
+	height:44px;
+	font-size:15px;
+	color:#848484;
+	line-height:22px;
+	padding:10px 15px;
+	font-weight:400;
+	background-color:#ffffff;
+	border:1px solid #e2e2e2;
+	transition:all 500ms ease;
+	-webkit-transition:all 500ms ease;
+	-ms-transition:all 500ms ease;
+	-o-transition:all 500ms ease;
+}
+
+.reserve-form .column button{
+	border-radius:0px;
+	font-size:12px;
+	letter-spacing:2px;
+	padding:13px 43px;
+	margin-top:10px;
+	cursor:pointer;
+}
+
+.reserve-form .text{
+	position:relative;
+	color:#ababab;
+	font-size:14px;
+	line-height:1.8em;
+	text-align:center;
+	margin-top:70px;
+}
+
+/*Custom Select*/
+
+.form-group .ui-selectmenu-button.ui-button{
+	width:100%;
+	font-size:14px;
+	font-style:normal;
+	height:50px;
+	padding:10px 20px;
+	line-height:30px;
+	color:#333333;
+	border-radius:0px;
+	outline: none !important;
+	border:1px solid #e5e5e5;
+	background-color:#ffffff;
+}
+
+.form-group .ui-button .ui-icon{
+	background:none;
+	position:relative;
+	top:3px;
+	text-indent:0px;
+	color:#333333;
+}
+
+.form-group .ui-button .ui-icon:before{
+	font-family: 'FontAwesome';
+	content: "\f107";
+	position:absolute;
+	right:0px;
+	top:2px !important;
+	top:13px;
+	width:10px;
+	height:20px;
+	display:block;
+	color:#e2e2e2;
+	line-height:20px;
+	font-size:16px;
+	font-weight:normal;
+	text-align:center;
+	z-index:5;
+}
+
+.ui-widget.ui-widget-content{
+	border:1px solid #e0e0e0;
+}
+
+.ui-menu .ui-menu-item{
+	font-size:14px;
+	border-bottom:1px solid #e0e0e0;
+}
+
+.ui-menu .ui-menu-item:last-child{
+	border:none;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active{
+	background-color:$secondary;
+}
+
+.ui-menu .ui-menu-item-wrapper{
+	position:relative;
+	display:block;
+	padding:8px 20px ;
+	font-size:14px;
+	line-height:24px;
+}
+
+.ui-menu-item:hover{
+	background-color:$secondary;
+}
